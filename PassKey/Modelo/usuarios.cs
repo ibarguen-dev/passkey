@@ -8,6 +8,7 @@ namespace PassKey.Modelo
 {
     public class usuarios
     {
+        public int id {  get; set; }
         public string sitio { get; set; }
         public string correo { get; set; }
 

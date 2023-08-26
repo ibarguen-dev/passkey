@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using PassKey.Modelo;
 using System.Data.SQLite;
+using System.Collections;
+
 namespace PassKey.Logica
 {
     public class LoginSession
@@ -43,11 +45,12 @@ namespace PassKey.Logica
                 {
                     conexion.Open();
                     string query = "select * from Usuario WHERE (Nombre = @Nombre and Password = @Password)";
-
+                    
                     SQLiteCommand cmd = new SQLiteCommand(query,conexion);
 
                     cmd.CommandType = System.Data.CommandType.Text;
-
+                    cmd.Parameters.Add(new SQLiteParameter("@Nombre",obj.usuario));
+                    cmd.Parameters.Add(new SQLiteParameter("@Password", obj.password));
                     using (SQLiteDataReader dr  = cmd.ExecuteReader()) {
 
                         while (dr.Read())
@@ -73,5 +76,7 @@ namespace PassKey.Logica
 
             return olista;
         }
+
+        
     }
 }

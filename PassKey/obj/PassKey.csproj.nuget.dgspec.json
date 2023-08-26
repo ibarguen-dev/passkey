@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\PassKey.csproj": {}
+    "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\PassKey.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\PassKey.csproj": {
+    "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\PassKey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\PassKey.csproj",
+        "projectUniqueName": "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\PassKey.csproj",
         "projectName": "PassKey",
-        "projectPath": "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\PassKey.csproj",
+        "projectPath": "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\PassKey.csproj",
         "packagesPath": "C:\\Users\\juane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\obj\\",
+        "outputPath": "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\juane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

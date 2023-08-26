@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aAB56WVkH6SLuhAviCkYlVPMNFCQzrzcUmWsLHPcu1xoz2Sqn5/ifQgksIPuQE5qoxKWzggYAuYJX9gJ1VoHXQ==",
+  "dgSpecHash": "1mzf83SvXi300AuoMRcFHaHptAZ3HtrUxgv2Yu4yMJqJossIBjHebJgg2k5MVxbWY2+rVORlESRQdcGlowDIPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juane\\source\\repos\\PassKey\\PassKey\\PassKey.csproj",
+  "projectFilePath": "D:\\Programacion\\c#\\Proyectos\\passkey\\PassKey\\PassKey.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juane\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\juane\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

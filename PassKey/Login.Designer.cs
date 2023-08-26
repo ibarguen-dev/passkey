@@ -43,67 +43,77 @@
             label1.Dock = DockStyle.Left;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(261, 285);
+            label1.Size = new Size(228, 214);
             label1.TabIndex = 0;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(412, 74);
+            txtUsuario.Location = new Point(360, 56);
+            txtUsuario.Margin = new Padding(3, 2, 3, 2);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(272, 27);
+            txtUsuario.Size = new Size(238, 23);
             txtUsuario.TabIndex = 1;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(412, 132);
+            txtPassword.Location = new Point(360, 99);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(272, 27);
+            txtPassword.Size = new Size(238, 23);
             txtPassword.TabIndex = 2;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(327, 81);
+            label2.Location = new Point(286, 61);
             label2.Name = "label2";
-            label2.Size = new Size(62, 20);
+            label2.Size = new Size(50, 15);
             label2.TabIndex = 3;
             label2.Text = "Usuario:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(303, 135);
+            label3.Location = new Point(265, 101);
             label3.Name = "label3";
-            label3.Size = new Size(86, 20);
+            label3.Size = new Size(70, 15);
             label3.TabIndex = 4;
             label3.Text = "Contraseña:";
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(303, 222);
+            btnGuardar.BackColor = Color.DarkSeaGreen;
+            btnGuardar.FlatStyle = FlatStyle.Popup;
+            btnGuardar.ForeColor = Color.White;
+            btnGuardar.Location = new Point(265, 166);
+            btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(146, 29);
+            btnGuardar.Size = new Size(128, 22);
             btnGuardar.TabIndex = 5;
-            btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Text = "Ingresar";
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCerrar
             // 
-            btnCerrar.Location = new Point(537, 222);
+            btnCerrar.BackColor = Color.Red;
+            btnCerrar.FlatStyle = FlatStyle.Popup;
+            btnCerrar.ForeColor = Color.White;
+            btnCerrar.Location = new Point(470, 166);
+            btnCerrar.Margin = new Padding(3, 2, 3, 2);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(147, 29);
+            btnCerrar.Size = new Size(129, 22);
             btnCerrar.TabIndex = 6;
             btnCerrar.Text = "Cerrar";
-            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.UseVisualStyleBackColor = false;
             btnCerrar.Click += btnCerrar_Click;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(722, 285);
+            ClientSize = new Size(632, 214);
             Controls.Add(btnCerrar);
             Controls.Add(btnGuardar);
             Controls.Add(label3);
@@ -112,6 +122,7 @@
             Controls.Add(txtUsuario);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Login";
             ResumeLayout(false);
