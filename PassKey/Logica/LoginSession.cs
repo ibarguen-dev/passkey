@@ -77,6 +77,80 @@ namespace PassKey.Logica
             return olista;
         }
 
-        
+        public bool restablecer()
+        {
+            bool respuesta = true;
+
+            using (SQLiteConnection conexion = new SQLiteConnection(connectionString))
+            {
+
+
+                try
+                {
+                    conexion.Open();
+                    string query = "DELETE FROM Usuario";
+
+                    SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+
+                    if (cmd.ExecuteNonQuery() < 1)
+                    {
+                        respuesta = false;
+                    }
+
+                    query = "INSERT INTO Usuario VALUES ('admin','admin12345')";
+
+                    cmd = new SQLiteCommand(query, conexion);
+
+                    if(cmd.ExecuteNonQuery() < 1)
+                    {
+                        respuesta =false;
+                    }
+                }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show("Error de conexión: " + ex.Message);
+                }
+            }
+
+            return respuesta;
+        }
+
+
+        public bool edit(login obj)
+        {
+
+            bool respuesta = true;
+
+            using (SQLiteConnection conexion = new SQLiteConnection(connectionString))
+            {
+
+
+                try
+                {
+                    conexion.Open();
+                    string query = "UPDATE Usuario SET Nombre = @Nombre, Password = @Password";
+
+                    SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                    cmd.CommandType = System.Data.CommandType.Text;
+
+                    cmd.Parameters.Add(new SQLiteParameter("@Nombre", obj.usuario));
+
+                    cmd.Parameters.Add(new SQLiteParameter("@Password", obj.password));
+
+
+                    if (cmd.ExecuteNonQuery() < 1)
+                    {
+                        respuesta = false;
+                    }
+                }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show("Error de conexión: " + ex.Message);
+                }
+            }
+            return respuesta;
+        }
     }
 }

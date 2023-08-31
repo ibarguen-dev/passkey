@@ -13,6 +13,7 @@ namespace PassKey
 {
     public partial class Inicio : Form
     {
+
         public Inicio()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace PassKey
         {
             mostrar();
 
-            
+
         }
 
         private string guardar()
@@ -111,5 +112,14 @@ namespace PassKey
                 mostrar();
             }
         }
+
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cambio cambio = new cambio();
+
+            cambio.Show();
+        }
+
     }
 }

@@ -88,7 +88,7 @@ namespace PassKey.Logica
                 try
                 {
                     conexion.Open();
-                    string query = "INSERT INTO Password VALUES(@Sitioweb,@Correo,@Password)";
+                    string query = "INSERT INTO Password (Sitioweb,Correo,Password) VALUES(@Sitioweb,@Correo,@Password)";
 
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                     
@@ -125,7 +125,7 @@ namespace PassKey.Logica
                 try
                 {
                     conexion.Open();
-                    string query = "UPDATE Password SET Sitioweb = @Sitioweb, Correo = @Correo, Password = @Password)";
+                    string query = "UPDATE Password SET Sitioweb = @Sitioweb, Correo = @Correo, Password = @Password WHERE id = @id)";
 
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
 
@@ -136,6 +136,8 @@ namespace PassKey.Logica
                     cmd.Parameters.Add(new SQLiteParameter("@Correo", obj.correo));
 
                     cmd.Parameters.Add(new SQLiteParameter("@Password", obj.password));
+
+                    cmd.Parameters.Add(new SQLiteParameter("@id", obj.id));
 
                     if (cmd.ExecuteNonQuery() < 1)
                     {

@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\Programacion\C#\Proyectos\passkey\PassKey\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
+    <Compile Update="cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
