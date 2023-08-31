@@ -13,7 +13,7 @@ namespace PassKey.Logica
     public class LoginSession
     {
 
-        string connectionString = @"Data Source=../Password.db;";
+        string connectionString = @"Data Source=./Password.db;";
         private static LoginSession _instancia = null;
 
         public LoginSession() { }

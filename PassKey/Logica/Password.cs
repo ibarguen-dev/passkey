@@ -10,7 +10,7 @@ namespace PassKey.Logica
 {
     public class Password
     {
-        string connectionString = @"Data Source=../Password.db;";
+        string connectionString = @"Data Source=./Password.db;";
         private static Password _instancia = null;
 
         public Password() { }
