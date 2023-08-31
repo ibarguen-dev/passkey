@@ -1,8 +1,8 @@
-#Passkey
+# Passkey
 
 Aplicación generadora de contraseña y se guardan en ella
 
-#Método de uso
+# Método de uso
 
 al iniciar la aplicación te pedirá usuario y contraseña, los cuales son.
 
@@ -37,12 +37,12 @@ password: admin
 
 
 
-#Cambio de contraseña
+# Cambio de contraseña
 
 Para el cambio de contraseña debes dar clic al botón configurador esto nos abre un menú de opciones que nos pide usuario y contraseña. diligenciamos los campos y le damos a cambiar contraseña.
 
 ![cambio](https://firebasestorage.googleapis.com/v0/b/curriculum-vatea.appspot.com/o/passkey%2Fcambio%20contrase%C3%B1a.PNG?alt=media&token=58df5e49-01b6-424f-8029-2e9cf0229aa3 "cambio")
 
-#BAGES
+# BAGES
 
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
